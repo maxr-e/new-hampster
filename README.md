@@ -68,3 +68,34 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+Max here. To make other pages available to the main app, you need to use a routing system. 
+1. I am using React Router, installed thusly:
+```
+npm i react-router-dom
+```
+2. Then import the dependencies in App.js:
+```
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+```
+3. Set up the routes in App.js:
+```
+import Portfolio from './components/Portfolio';
+import About from './components/About';
+
+function App() {
+    return (
+        <Router>
+            <Header />
+            <Routes>
+                <Route path="/" element={<Portfolio />} />
+                <Route path="/about" element={<About />} />
+            </Routes>
+        </Router>
+    );
+}
+
+export default App;
+```
+4. Create the component pages under ./components and import them an seen in App.js above.
+5. To navigate between the pages, a header or navbar can be persistent across the app using a "header.js" and links to the other pages using `import { Link } from 'react-router-dom';`
