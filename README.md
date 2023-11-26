@@ -69,7 +69,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-Max here. To make other pages available to the main app, you need to use a routing system. 
+## Max here.
+To make other pages available to the main app, you need to use a routing system. 
 1. I am using React Router, installed thusly:
 ```
 npm i react-router-dom

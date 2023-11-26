@@ -1,4 +1,5 @@
 import React from 'react';
+import sunset from "../images/sfsunset.jpg"
 
 export default function About() {
   return (
