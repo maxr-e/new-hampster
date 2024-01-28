@@ -11,7 +11,31 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nav-bar-style {
+  justify-content: center;
+  /* opacity: 0.5;
+  z-index: 1;
+  position: sticky; */
+}
+
+.joshua-tree {
+  background-image: url(./images/jtnp_mountain_wm.png);
+  background-color: #cccccc;
+  top: 0px;
+  height: 900px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  }
+  
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
 }

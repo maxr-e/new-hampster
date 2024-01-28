@@ -557,7 +557,8 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Portfolio', href: '#', current: true },
+  { name: 'Home', href: '#', current: true },
+  { name: 'Portfolio', href: '#', current: false },
   { name: 'Resume', href: '#', current: false },
   { name: 'About', href: '#', current: false },
   { name: 'Contact', href: '#', current: false },
@@ -569,7 +570,7 @@ function classNames(...classes) {
 
 export default function Header() {
   return (
-    <Disclosure as="nav" className="bg-gray-800">
+    <Disclosure as="nav" className="sticky top-0 bg-gray-800">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -1149,54 +1150,40 @@ M289.064606,278.840271
 z"
                     />
                   </svg>
-                  {/* <img
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                    alt="Your Company"
-                  /> */}
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
-				  <Link
-            to="/"
-            className="bg-gray-900 text-white text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
-          >
-            Portfolio
-          </Link>
-          <Link
-            to="/about"
-            className="bg-gray-900 text-white text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
-          >
-            About
-          </Link>
-          <Link
-            to="/resume"
-            className="bg-gray-900 text-white text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
-          >
-            Resume
-          </Link>
-          <Link
-            to="/contact"
-            // class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
-			className="bg-gray-900 text-white text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
-          >
-            Contact Me
-          </Link>
-                    {/* {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className={classNames(
-                          item.current
-                            ? "bg-gray-900 text-white"
-                            : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                          "rounded-md px-3 py-2 text-sm font-medium"
-                        )}
-                        aria-current={item.current ? "page" : undefined}
-                      >
-                        {item.name}
-                      </a>
-                    ))} */}
+                    <Link
+                      to="/"
+                      className="bg-gray-900 text-white text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                    >
+                      Home
+                    </Link>
+                    <Link
+                      to="/portfolio"
+                      className="bg-gray-900 text-white text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                    >
+                      Portfolio
+                    </Link>
+                    <Link
+                      to="/about"
+                      className="bg-gray-900 text-white text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                    >
+                      About
+                    </Link>
+                    <Link
+                      to="/resume"
+                      className="bg-gray-900 text-white text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                    >
+                      Resume
+                    </Link>
+                    <Link
+                      to="/contact"
+                      // class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+                      className="bg-gray-900 text-white text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                    >
+                      Contact Me
+                    </Link>
                   </div>
                 </div>
               </div>
