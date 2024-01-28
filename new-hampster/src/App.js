@@ -11,6 +11,7 @@ import About from './pages/About';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
+//layout would go inside the router-routes
 function App() {
   return (
     <Router>
