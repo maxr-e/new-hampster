@@ -8,15 +8,17 @@ export default function Home() {
 min-h-screen w-full h-full flex items-center justify-center bg-cover bg-center
          mx-auto
         -z-10 bg-hero-img bg-no-repeat bg-cover bg-origin-border bg-local
-        ">Whaaaaaaaaaat</div>
+        ">
+          <div className="bg-indigo-600 bg-opacity-75 p-3 rounded">
+          <h1 className= "font-bold text-center text-6xl text-white">Welcome to My Website</h1>
+          </div>
+         </div>
       <header>
         <div className="head-nav">
           <div className="logo">Your Logo</div>
           
         </div>
         <div className="hero">
-          <h1>Welcome to Our Website</h1>
-          <p>Awesome tagline that connects with your very esscence.</p>
           <a href="#" className="cta-button">
             Learn More
           </a>
