@@ -14,8 +14,11 @@ min-h-screen w-full h-full flex items-center justify-center bg-cover bg-center
           </div>
          </div>
       <header>
-        <div className="head-nav">
+        <div className="head-nav border-sm border-red-500 border-solid border-2 flex flex-row">
+          <div className="flex-auto" id="triangleRight"></div>
           <div className="logo">Your Logo</div>
+          <div className="flex-auto" id="triangleLeft"></div>
+
           
         </div>
         <div className="hero">

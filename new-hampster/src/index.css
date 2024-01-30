@@ -39,3 +39,19 @@ body {
   font-size: 18px;
   border-radius: 5px;
 }
+/* trying to get a triangle motif going on the main page here. maybe i'll try svg masking next */
+#triangleLeft {
+  width: 0;
+  height: 0;
+  border-top: 40px solid transparent;
+  border-right: 80px solid lightblue;
+  border-bottom: 40px solid transparent;
+}
+
+#triangleRight {
+  width: 0;
+  height: 0;
+  border-top: 40px solid transparent;
+  border-left: 80px solid rgb(230, 198, 173);
+  border-bottom: 40px solid transparent;
+}
